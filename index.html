@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="side"><p>Making millions of lives better with our global network of comprehensive healthcare.</p></div>
+
+
+    <div id="container">
+    
+        <div class="grid one">
+         
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
+            <a href="#">Flower</a>
+        
+            <p class="question"><span>WHO</span>
+                we are</p>
+        </div>
+
+
+    
+        <div class="grid two"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
+         <a href="#">Rain</a>
+         <p class="question"><span>WHEN</span>
+            we began</p>
+        </div>
+        
+         <div class="grid three">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
+         <a href="#">Ocean</a>
+         <p class="question"><span>WHAT</span>
+            we offer</p>
+         </div>
+        
+         <div class="grid four">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
+         <a href="#">Tree</a>
+         <p class="question"><span>WHERE</span>
+            we operate</p>
+        </div>
+
+        <div class="grid five">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
+             <a href="#">Night</a>
+             <p class="question"><span>WHY</span>
+                we innovate</p>
+        </div>        
+        <div class="grid six" style="background-image: url(./pics/);">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
+             <a href="#">Garden</a>
+             <p class="question"><span>HOW</span>
+                we contribute</p>
+            </div>
+  </div>
+
+</div>
+<script type="text/javascript">
+
+document.body.addEventListener("mouseover",(e)=>{
+    
+    console.log(e.target.classList.contains('grid'));
+
+
+
+    //if class name contains 'grid'
+    if(e.target.classList.contains('grid')){
+    
+        switch(e.target.classList[1]){
+
+     case 'one': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?computer)`;
+     break;
+     case 'two': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?coding)`;
+     break;
+     case 'three': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?mobile`;
+     break;
+     case 'four': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?technology)`;
+     break;
+     case 'five': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?hacking)`;
+     break;
+     case 'six': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?robotics)`;
+     break;
+     }  
+    }
+    else {document.querySelector('#container').style=`background-image: url(https://source.unsplash.com/1600x900/?machine")`;}
+     
+
+});
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
