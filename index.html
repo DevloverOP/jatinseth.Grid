@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
+    
     <div class="main">
         <div class="side"><p>Making millions of lives better with our global network of comprehensive healthcare.</p></div>
 
@@ -51,10 +53,11 @@
              <p class="question"><span>WHY</span>
                 we innovate</p>
         </div>        
-        <div class="grid six" style="background-image: url(./pics/);">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
+        <div class="grid six">
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
              <a href="#">Garden</a>
-             <p class="question"><span>HOW</span>
+        
+              <p class="question"><span>HOW</span>
                 we contribute</p>
             </div>
   </div>
@@ -63,19 +66,15 @@
 <script type="text/javascript">
 
 document.body.addEventListener("mouseover",(e)=>{
-    
-    console.log(e.target.classList.contains('grid'));
-
-
-
+   
     //if class name contains 'grid'
     if(e.target.classList.contains('grid')){
-    
+         
         switch(e.target.classList[1]){
 
      case 'one': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?computer)`;
      break;
-     case 'two': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?coding)`;
+     case 'two': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?google)`;
      break;
      case 'three': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?mobile`;
      break;
@@ -86,13 +85,23 @@ document.body.addEventListener("mouseover",(e)=>{
      case 'six': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?robotics)`;
      break;
      }  
+    visibility(e.target.classList[1]);
     }
     else {document.querySelector('#container').style=`background-image: url(https://source.unsplash.com/1600x900/?machine")`;}
      
 
 });
 
+function visibility(grid){
+    
+//showing paragraph tag
+document.querySelector(`.${grid}`).children[0].style.display='block';
+//showinh button
+document.querySelector(`.${grid}`).children[0].nextElementSibling.style.display='block';
+//hiding question
+document.querySelector(`.${grid}`).lastElementChild.style.display='none';
 
+ }
 
 
 </script>
