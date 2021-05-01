@@ -1,113 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid</title>
-    <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="main">
-        <div class="side"><p>Making millions of lives better with our global network of comprehensive healthcare.</p></div>
+      <div class="side">
+        <p>
+          Making millions of lives better with our global network of
+          comprehensive healthcare.
+        </p>
+      </div>
 
-
-    <div id="container">
-    
+      <div id="container">
         <div class="grid one">
-         
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
+          <div class="pa">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repellendus magni hic molestiae obcaecati cumque dignissimos esse.
+            </p>
             <a href="#">Flower</a>
-        
-            <p class="question"><span>WHO</span>
-                we are</p>
+          </div>
+          <div class ="question">
+            <p><span>WHO</span>we are</p>
+          </div>
         </div>
 
-
-    
-        <div class="grid two"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
-         <a href="#">Rain</a>
-         <p class="question"><span>WHEN</span>
-            we began</p>
-        </div>
-        
-         <div class="grid three">
-             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
-         <a href="#">Ocean</a>
-         <p class="question"><span>WHAT</span>
-            we offer</p>
-         </div>
-        
-         <div class="grid four">
-             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
-         <a href="#">Tree</a>
-         <p class="question"><span>WHERE</span>
-            we operate</p>
+        <div class="grid two">
+          <div class="pa">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repellendus magni hic molestiae obcaecati cumque dignissimos esse.
+            </p>
+            <a href="#">Rain</a>
+          </div>
+          <div class="question">
+            <p><span>WHEN</span>we began</p>
+          </div>
         </div>
 
+        <div class="grid three">
+          <div class="pa">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repellendus magni hic molestiae obcaecati cumque dignissimos esse.
+            </p>
+            <a href="#">Rain</a>
+          </div>
+
+          <div class="question">
+            <p><span>WHAT</span> we offer</p>
+          </div>
+        </div>
+
+        <div class="grid four">
+          <div class="pa">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repellendus magni hic molestiae obcaecati cumque dignissimos esse.
+            </p>
+            <a href="#">Rain</a>
+          </div>
+          <div class="question">
+            <p><span>WHERE</span>we operate</p>
+          </div>
+        </div>
         <div class="grid five">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
-             <a href="#">Night</a>
-             <p class="question"><span>WHY</span>
-                we innovate</p>
-        </div>        
+          <div class="pa">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repellendus magni hic molestiae obcaecati cumque dignissimos esse.
+            </p>
+            <a href="#">Rain</a>
+          </div>
+          <div class="question">
+            <p><span>WHY</span> we innovate</p>
+          </div>
+        </div>
         <div class="grid six">
-           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni hic molestiae obcaecati cumque temporibus fugiat ducimus maiores dignissimos esse.</p>
-             <a href="#">Garden</a>
-        
-              <p class="question"><span>HOW</span>
-                we contribute</p>
-            </div>
-  </div>
+          <div class="pa">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repellendus magni hic molestiae obcaecati cumque dignissimos esse.
+            </p>
+            <a href="#">Rain</a>
+          </div>
+          <div class="question">
+            <p><span>HOW</span>we contribute</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</div>
-<script type="text/javascript">
 
-document.body.addEventListener("mouseover",(e)=>{
-   
-    //if class name contains 'grid'
-    if(e.target.classList.contains('grid')){
-         
-        switch(e.target.classList[1]){
 
-     case 'one': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?computer)`;
-     break;
-     case 'two': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?google)`;
-     break;
-     case 'three': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?mobile`;
-     break;
-     case 'four': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?technology)`;
-     break;
-     case 'five': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?hacking)`;
-     break;
-     case 'six': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?robotics)`;
-     break;
-     }  
-    visibility(e.target.classList[1]);
+
+    <div class="gd" style="border: 2px solid black; width: 104px; height: 105px">
+      <div class="pa" style="border: 2px solid red;width: 100px;height: 100px;">
+        btn para
+      </div>
+      <div class="question" style="border: 2px solid blue; width: 100px; height: 100px">
+        WHy
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+
+document.body.addEventListener("mouseover",show)
+
+function show(e){
+// console.log(e.target.children[0].children[1]);
+    if(e.target.className==="question"){
+           //showing para
+        e.target.previousElementSibling.style.display='flex';
+         //hide question
+      e.target.style.display='none';
     }
-    else {document.querySelector('#container').style=`background-image: url(https://source.unsplash.com/1600x900/?machine")`;}
-     
+}
 
-});
+document.body.addEventListener("mouseout",hide)
 
-function visibility(grid){
-    
-//showing paragraph tag
-document.querySelector(`.${grid}`).children[0].style.display='block';
-//showinh button
-document.querySelector(`.${grid}`).children[0].nextElementSibling.style.display='block';
-//hiding question
-document.querySelector(`.${grid}`).lastElementChild.style.display='none';
-
- }
-
-
-</script>
+function hide(e){
+//console.log(e.target.classList);
+    if(e.target.className==="pa"){
+        //hide para
+       e.target.style.display='none';
+        //showing question
+        e.target.nextElementSibling.style.display='flex';
+  
+    }
+}
 
 
 
 
-</body>
+
+
+
+
+
+      // document.body.addEventListener("mouseover",(e)=>{
+      //   let container =document.querySelector('#container');
+      //     //if class name contains 'grid'
+      //     if(e.target.classList.contains('grid')){
+
+      //         switch(e.target.classList[1]){
+
+      //      case 'one': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?computer)`;
+      //      break;
+      //      case 'two': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?google)`;
+      //      break;
+      //      case 'three': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?mobile`;
+      //      break;
+      //      case 'four': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?technology)`;
+      //      break;
+      //      case 'five': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?hacking)`;
+      //      break;
+      //      case 'six': e.target.parentElement.style=`background-image: url(https://source.unsplash.com/1600x900/?robotics)`;
+      //      break;
+      //      }
+      //     visibility(e.target.classList[1]);
+      //     }
+      //     else {document.querySelector('#container').style=`background-image: url(https://source.unsplash.com/1600x900/?machine")`;}
+
+      // });
+
+      function visibility(grid) {
+        //showing paragraph tag
+        document.querySelector(`.${grid}`).children[0].style.display = "block";
+        //showinh button
+        document.querySelector(
+          `.${grid}`
+        ).children[0].nextElementSibling.style.display = "block";
+        //hiding question
+        document.querySelector(`.${grid}`).lastElementChild.style.display =
+          "none";
+      }
+    </script>
+  </body>
 </html>
