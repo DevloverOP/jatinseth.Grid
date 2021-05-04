@@ -102,9 +102,7 @@
 
     <script type="text/javascript">
       document.body.addEventListener("mouseover", show);
-      document
-        .querySelector("#container")
-        .addEventListener("mouseleave", (e) => {
+      document.querySelector("#container").addEventListener("mouseleave", (e) => {
           e.target.style = `background-image: url(https://source.unsplash.com/1600x900/?machine)`;
           reset(e.target);
         });
@@ -113,18 +111,13 @@
         let Q = "";
         if (e.target.parentElement.className === "question") {
           Q = e.target.parentElement;
-          console.log("P", e.target);
         } else if (
           e.target.parentElement.parentElement.className === "question"
         ) {
           Q = e.target.parentElement.parentElement;
-          console.log("S", e.target);
         } else if (e.target.className === "question") {
           Q = e.target;
-          console.log("ques", e.target);
         }
-
-        console.log("Q", Q);
 
         if (Q.className === "question") {
           //debugger;
