@@ -8,6 +8,7 @@ body{
  margin: 0px;
 }
 .main{
+
   height: 90vh;
   display: grid;
   grid-template-rows: 1fr;
@@ -38,10 +39,11 @@ body{
   text-decoration: none;
   color: white;
   display: block;
-  padding: 10px;
   width: 50%;
+  padding:10px ;
   margin: auto;
   font-family: serif;
+  text-align: center;
 }
 
 .question,
@@ -50,11 +52,12 @@ body{
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   font-family: "sofia";
 }
 .pa {
+ text-align: left;
   display: none;
 }
 
@@ -80,15 +83,7 @@ body{
   background-color: rgb(7, 137, 160);
 }
 
-
-
-
-
-
-
-
-
-@media (max-width: 1000px) {
+@media  (max-width: 1000px) {
   .main {
     grid-template-rows: 100px 1fr;
     grid-template-columns: 1fr;
@@ -97,6 +92,15 @@ body{
   #container {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
+  }
+  .pa {
+    padding: 30px;
+  }
+ }
+
+@media (min-width: 1001px){
+    .pa {
+    padding: 30px;
   }
 }
 
