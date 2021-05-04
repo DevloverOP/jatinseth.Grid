@@ -101,17 +101,18 @@
     </div>
 
     <script type="text/javascript">
-      document.body.addEventListener("mouseover", show);
-      document.querySelector("#container").addEventListener("mouseleave", (e) => {
+      document.body.addEventListener("mouseover",show);
+      document.querySelector("#container")
+        .addEventListener("mouseleave", (e) => {
           e.target.style = `background-image: url(https://source.unsplash.com/1600x900/?machine)`;
           reset(e.target);
         });
 
       function show(e) {
-        let Q = "";
+        let Q = {};
         if (e.target.parentElement.className === "question") {
           Q = e.target.parentElement;
-        } else if (
+          } else if (
           e.target.parentElement.parentElement.className === "question"
         ) {
           Q = e.target.parentElement.parentElement;
@@ -119,8 +120,10 @@
           Q = e.target;
         }
 
+        console.log("Q", e);
+           
         if (Q.className === "question") {
-          //debugger;
+        
           changeBackground(Q.parentElement);
           //passing container class
           reset(Q.parentElement.parentElement);
@@ -148,7 +151,7 @@
             grid.parentElement.style = `background-image: url(https://source.unsplash.com/1600x900/?google)`;
             break;
           case "three":
-            grid.parentElement.style = `background-image: url(https://source.unsplash.com/1600x900/?mobile`;
+            grid.parentElement.style = `background-image: url(https://source.unsplash.com/1600x900/?mobile)`;
             break;
           case "four":
             grid.parentElement.style = `background-image: url(https://source.unsplash.com/1600x900/?technology)`;
